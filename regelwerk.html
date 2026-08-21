@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUKUNA | Regelwerk</title>
+    <style>
+        :root {
+            --bg-base: #08080a;
+            --bg-card: #121216;
+            --accent-red: #cc0000;
+            --accent-glow: rgba(204, 0, 0, 0.4);
+            --text-main: #ffffff;
+            --text-muted: #a1a1aa;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Arial Black', Gadget, sans-serif; }
+        body { background-color: var(--bg-base); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+
+        /* Sticky Navigation */
+        nav {
+            position: fixed; top: 0; width: 100%; padding: 20px 30px; background: rgba(8, 8, 10, 0.95);
+            display: flex; justify-content: center; gap: 25px; z-index: 1000; border-bottom: 1px solid var(--accent-red);
+            backdrop-filter: blur(5px);
+        }
+        nav a { color: var(--text-main); text-decoration: none; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; transition: 0.3s; }
+        nav a:hover { color: var(--accent-red); text-shadow: 0 0 10px var(--accent-glow); }
+
+        section { padding: 130px 20px 60px 20px; max-width: 1100px; margin: 0 auto; }
+        
+        .section-title { 
+            font-size: 2.5rem; margin-bottom: 40px; text-align: center; text-transform: uppercase;
+            letter-spacing: 2px; border-bottom: 2px solid var(--accent-red); display: table; 
+            margin-left: auto; margin-right: auto; padding-bottom: 10px;
+        }
+
+        .card { 
+            background-color: var(--bg-card); padding: 35px; border-radius: 6px; border: 1px solid #1f1f26; 
+            border-left: 4px solid var(--accent-red); margin-bottom: 30px;
+        }
+        .card h3 { margin-bottom: 15px; color: var(--text-main); font-size: 1.4rem; border-bottom: 1px solid #2a2a35; padding-bottom: 8px; }
+        .card h4 { margin: 20px 0 10px 0; color: var(--accent-red); font-size: 1.1rem; text-transform: uppercase; }
+        .card p, .card li { color: var(--text-muted); font-size: 0.95rem; }
+        .card ul { list-style-position: inside; padding-left: 0; }
+        .card li { margin-bottom: 10px; }
+
+        .back-btn {
+            display: inline-block; margin-bottom: 20px; color: var(--text-muted); text-decoration: none;
+            text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; transition: 0.3s;
+        }
+        .back-btn:hover { color: var(--accent-red); }
+
+        footer { text-align: center; padding: 50px; color: var(--text-muted); border-top: 1px solid #141419; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">← Zurück zur Hauptseite</a>
+        <a href="regelwerk.html" style="color: var(--accent-red);">Regelwerk</a>
+    </nav>
+
+    <section>
+        <a href="index.html" class="back-btn">&larr; Zurück zur Startseite</a>
+        <h2 class="section-title">Regelwerk</h2>
+
+        <!-- I. Fort Zancudo & Cayo Perico -->
+        <div class="card">
+            <h3>I. Fort Zancudo & Cayo Perico (Events)</h3>
+            
+            <h4>Allgemeine Grundsätze</h4>
+            <ul>
+                <li><strong>Fort Zancudo:</strong> Der Militär-Stützpunkt der SANG, der von kriminellen Organisationen für Materialien attackiert werden kann. Die Aufgabe der Staatsfraktionen ist die Verteidigung.</li>
+                <li><strong>Cayo Perico:</strong> Eine Insel unter Kontrolle der SANG, die ebenfalls von kriminellen Organisationen angegriffen werden kann. Staatsfraktionen wehren den Angriff ab.</li>
+                <li><strong>Event-Regeln:</strong> Grundsätzlich gelten alle Serverregeln für Events, mit Ausnahmen für PG (Powergaming) und RDM (Random Deathmatch).</li>
+            </ul>
+
+            <h4>Fort Zancudo — Wichtige Regeln</h4>
+            <ul>
+                <li><strong>Angriffszeiten:</strong> Montag, Mittwoch, Freitag und Samstag von 15:00 bis 23:00 Uhr.</li>
+                <li><strong>Verboten sind:</strong> Sniper-Gewehre, Taser, Drohnen, das Erreichen unerreichbarer Hügel/Orte per Flugobjekt, das absichtliche Zerstören von gegnerischen Materialfahrzeugen, das Schießen aus/in das Fort während des Raids, in/aus markierte Zonen zu schießen oder dorthin zu fliehen.</li>
+                <li><strong>Skins:</strong> Es sind ausschließlich Standard-GTA-V-Skins erlaubt (keine "Elfen"-Skins oder ähnliche Charakterveränderungen).</li>
+                <li><strong>POV-Pflicht:</strong> Jede teilnehmende kriminelle Fraktion muss ein Video (mindestens 720p mit Originalton inklusive Beladung) für 72 Stunden aufbewahren.</li>
+            </ul>
+
+            <h4>Cayo Perico — Wichtige Regeln</h4>
+            <ul>
+                <li><strong>Angriffszeiten:</strong> Dienstag, Donnerstag und Sonntag von 15:00 bis 23:00 Uhr.</li>
+                <li><strong>Verboten sind:</strong> Sniper, Drohnen, Taser, Privatfahrzeuge, das Schießen in/aus der Villa (gelbe Zone), das Campen am Flughafenspawn sowie das Halten eines Punktes länger als 30 Minuten ohne aktives Feuergefecht.</li>
+                <li><strong>Teilnehmer:</strong> Maximal 60, mindestens 10 Personen (inklusive Allianz). Der Initiator darf bis zu 2 verbündete Organisationen einladen.</li>
+            </ul>
+        </div>
+
+        <!-- II. Familien & Clans -->
+        <div class="card">
+            <h3>II. Familien & Clans</h3>
+            
+            <h4>Allgemeine Familien-Regeln</h4>
+            <ul>
+                <li><strong>Grundlagen:</strong> Für jede Familie gelten alle gängigen Serverregeln sowie die Regeln für kriminelle Organisationen. Kleidung und Fahrzeuge richten sich nach der HUD-Farbe der Familie.</li>
+                <li><strong>Finanzen:</strong> Die Nutzung des Familienkontos und -lagers für persönliche Zwecke ist ohne Erlaubnis des Leaders strengstens untersagt.</li>
+                <li><strong>Allianzen:</strong> Eine Familie darf maximal 2 Bündnisse eingehen (eine Gang und eine andere Familie/Clan), welche IC beschlossen werden müssen.</li>
+            </ul>
+
+            <h4>Clan-Status & Anforderungen</h4>
+            <ul>
+                <li><strong>Bewerbung & Regeln:</strong> Clans müssen sich schriftlich im Forum bewerben, die Anforderungen durchgehend erfüllen und mindestens 15 aktive Mitglieder besitzen.</li>
+                <li><strong>Administration:</strong> Der (Deputy) Chief-Administrator und die Chief-Curatoren müssen in den Familiendiscord eingeladen werden und eine übergeordnete Moderatorrolle erhalten.</li>
+                <li><strong>Pflichten:</strong> Clans müssen eine feste, eingereichte Kleiderordnung einhalten, Fahrzeuge in Familienfarbe nutzen, das Rollenspiel aktiv fördern und an Events teilnehmen.</li>
+            </ul>
+        </div>
+
+        <!-- III. Kriminelle Organisationen & Aktivitäten -->
+        <div class="card">
+            <h3>III. Kriminelle Organisationen & Aktivitäten</h3>
+            
+            <h4>Allgemeine Vorschriften</h4>
+            <ul>
+                <li><strong>Status:</strong> Jede kriminelle Familie und Gang gilt als kriminelle Organisation. Straftaten können nur als Mitglied mit korrekter Fraktionskleidung, Vollmaskierung und in Fraktionsfarben lackierten Fahrzeugen ausgeführt werden.</li>
+                <li><strong>Headquarter (HQ):</strong> Das Betreten eines fremden HQs ist ohne IC-Grund verboten. Provokationen oder Fluchten ins eigene HQ sind untersagt.</li>
+            </ul>
+
+            <h4>Überfälle, Entführungen & Geiselnahmen</h4>
+            <ul>
+                <li><strong>Teilnehmer:</strong> Bei Entführungen müssen die Initiatoren doppelt so viele Personen sein wie die Opfer. Maximal dürfen 5 Personen gleichzeitig beraubt oder entführt werden.</li>
+                <li><strong>Geiselnahmen:</strong> EMS-Mitarbeiter im Dienst dürfen nicht entführt werden. Für jede Forderung der Entführer (außer Geld) muss im Gegenzug eine Geisel freigelassen werden. Maximales Lösegeld für Leader liegt bei 200.000 $ (Kriminell) bzw. 400.000 $ (Staatlich).</li>
+                <li><strong>Ausrauben (Zinken):</strong> Geld- oder Westendiebstahl darf ausschließlich funktionell über das G-Menü erfolgen. Waffen und Munition dürfen per Aufforderung abgenommen werden. Arbeiter (Postboten, Müllmänner etc.) dürfen während ihrer Arbeitszeit (12:00 bis 23:00 Uhr) nicht beraubt werden.</li>
+            </ul>
+        </div>
+
+        <!-- IV. Laden- & Bankraub -->
+        <div class="card">
+            <h3>IV. Laden- & Bankraub</h3>
+            <ul>
+                <li><strong>Zeiten:</strong> Ladenraub findet von 12:00 bis 00:59 Uhr statt; Bankraub von 12:00 bis 22:59 Uhr.</li>
+                <li><strong>Teilnehmer:</strong> 
+                  <br>- Ladenraub: 2 bis 35 Personen.
+                  <br>- Bankraub: Mindestens 4 Personen (zwingend mit mindestens einer Geisel).
+                </li>
+                <li><strong>Ablauf:</strong> Das Blockieren von Zu- und Ausgängen ist verboten. Splittergranaten sind strengstens untersagt.</li>
+                <li><strong>Staatliche Fraktionen:</strong> Müssen mit mindestens 3 Personen reagieren und dürfen ein Schussgefecht niemals ohne vorherige Verhandlungen eröffnen.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 SUKUNA &bull; Loyalität. Respekt. Zusammenhalt.</p>
+    </footer>
+
+</body>
+</html>
