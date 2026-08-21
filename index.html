@@ -28,8 +28,7 @@
 
         header {
             height: 90vh;
-            /* Hier kannst du dein GIF als Hintergrund einbinden: url('dein-header.gif') */
-            background: linear-gradient(rgba(8, 8, 10, 0.7), rgba(8, 8, 10, 0.95)), url('Ab Soul Burn GIF.gif') no-repeat center center/cover;
+            background: linear-gradient(rgba(8, 8, 10, 0.7), rgba(8, 8, 10, 0.95)), url('Sakuna/grafik_2.png') no-repeat center center/cover;
             display: flex; flex-direction: column; justify-content: center; align-items: center;
             text-align: center; padding: 20px; border-bottom: 5px solid var(--accent-red);
         }
@@ -53,8 +52,9 @@
         }
 
         .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
         
-        /* Karten & GIF-Container */
+        /* Karten & Container */
         .card { 
             background-color: var(--bg-card); padding: 35px; border-radius: 6px; border: 1px solid #1f1f26; 
             border-left: 4px solid var(--accent-red); transition: all 0.3s ease; margin-bottom: 20px;
@@ -67,7 +67,42 @@
         .card h3 { margin-bottom: 15px; color: var(--text-main); font-size: 1.4rem; border-bottom: 1px solid #2a2a35; padding-bottom: 8px; }
         .card p, .card li { color: var(--text-muted); font-size: 0.95rem; }
 
-        /* Stilvoller GIF-Container für die Story */
+        /* Bildkarten für Standorte & Flotte */
+        .image-card {
+            background-color: var(--bg-card);
+            border-radius: 6px;
+            border: 1px solid #1f1f26;
+            border-top: 4px solid var(--accent-red);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+        .image-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(204, 0, 0, 0.2);
+            border-color: var(--accent-red);
+        }
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .image-card-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+        .image-card-content h3 {
+            color: var(--text-main);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Familien-GIF Container */
         .family-gif-container {
             width: 100%;
             max-height: 450px;
@@ -133,7 +168,7 @@
     <nav>
         <a href="index.html#mitglieder">Leaderschaft</a>
         <a href="index.html#ueber-uns">Über Uns</a>
-        <a href="index.html#bereiche">Sparten</a>
+        <a href="index.html#standorte">Standorte & Flotte</a>
         <a href="regelwerk.html">Regelwerk</a>
     </nav>
 
@@ -176,9 +211,9 @@
     <section id="ueber-uns">
         <h2 class="section-title">Über Uns & Geschichte</h2>
         
-        <!-- Hier wird das GIF eingebunden -->
+        <!-- Familien-GIF aus dem Ordner Sakuna -->
         <div class="family-gif-container">
-            <img src="DEIN_FAMILIEN_GIF.gif" alt="SUKUNA Familie Vibe">
+            <img src="Sakuna/eyes bally GIF by Swarmz.gif" alt="SUKUNA Familie Vibe">
         </div>
 
         <div class="grid-2">
@@ -193,30 +228,65 @@
         </div>
     </section>
 
-    <!-- 3. Übrige Sparten (Zum Ausklappen) -->
-    <section id="bereiche">
-        <h2 class="section-title">Weitere Sparten</h2>
-        <p style="text-align: center; color: var(--text-muted); margin-bottom: 30px; text-transform: uppercase; font-size: 0.9rem;">Klicke auf eine Sparte, um die Details zu öffnen:</p>
+    <!-- 3. Standorte & Flotte (Bilder aus Sakuna/) -->
+    <section id="standorte">
+        <h2 class="section-title">Standorte & Flotte</h2>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 30px; text-transform: uppercase; font-size: 0.9rem;">Infrastruktur & Assets der Familie</p>
 
-        <details class="card">
-            <summary>Anwesen & Hauptquartier</summary>
-            <p style="margin-top: 15px;">Unser geschützter Rückzugsort in Los Santos. Hier finden interne Besprechungen statt, strategische Pläne werden geschmiedet und das familiäre Miteinander gepflegt.</p>
-        </details>
-
-        <details class="card">
-            <summary>Autoflotte</summary>
-            <div style="margin-top: 15px;" class="grid-2">
-                <div>
-                    <h4 style="color: var(--accent-red); margin-bottom: 8px;">Einsatzfahrzeuge</h4>
-                    <p>Optisch einheitlich in Schwarz und Rot gehalten. Schnell, wendig und jederzeit bereit für jeden Zugriff.</p>
-                </div>
-                <div>
-                    <h4 style="color: var(--accent-red); margin-bottom: 8px;">Luxus & Repräsentation</h4>
-                    <p>Ausgewählte Fahrzeuge für offizielle Geschäftstermine und um den nötigen Status auf den Straßen zu zeigen.</p>
+        <div class="grid-3">
+            <!-- Anwesen -->
+            <div class="image-card">
+                <img src="Sakuna/HAus.png" alt="Anwesen Haus #979">
+                <div class="image-card-content">
+                    <div>
+                        <h3>Anwesen #979</h3>
+                        <p>Unser familiärer Hauptsitz, Treffpunkt für interne Absprachen und gesellige Abende.</p>
+                    </div>
                 </div>
             </div>
-        </details>
 
+            <!-- Büro -->
+            <div class="image-card">
+                <img src="Sakuna/Büro.png" alt="Büro">
+                <div class="image-card-content">
+                    <div>
+                        <h3>Büro</h3>
+                        <p>Die offizielle geschäftliche Vertretung im Herzen der Stadt für geschäftliche Angelegenheiten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lager -->
+            <div class="image-card">
+                <img src="Sakuna/Lager.png" alt="Lager #2 Raum #33">
+                <div class="image-card-content">
+                    <div>
+                        <h3>Lager #2, Raum #33</h3>
+                        <p>Hochkapazitäts-Lagerraum mit <strong>16.000 kg</strong> Speicherplatz für Ausrüstung und Ressourcen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flotte / Fuhrpark -->
+        <div style="margin-top: 30px;" class="card">
+            <h3 style="margin-bottom: 20px;">Familien-Fuhrpark</h3>
+            <div class="grid-2" style="align-items: center;">
+                <div>
+                    <img src="Sakuna/troll.png" alt="Flotte Schwarz-Rot" style="width: 100%; border-radius: 6px; border: 1px solid #1f1f26;">
+                </div>
+                <div>
+                    <p style="margin-bottom: 15px;">Einheitlich im markanten Schwarz-Rot-Look lackiert spiegelt unsere Flotte den Status von SUKUNA wider.</p>
+                    <p>Ob High-End-Sportwagen für schnelle Einsätze oder Repräsentationsfahrzeuge – hier sitzt jeder Handgriff und jedes Fahrzeug ist einsatzbereit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Weitere Sparten (Zum Ausklappen) -->
+    <section id="bereiche">
+        <h2 class="section-title">Weitere Sparten</h2>
+        
         <details class="card">
             <summary>Ziele & Aktivitäten</summary>
             <div style="margin-top: 15px;" class="grid-2">
